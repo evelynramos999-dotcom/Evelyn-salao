@@ -1236,15 +1236,25 @@ function irGoogleCal(){
   const nome = document.getElementById("c-nome").value.trim();
   const sob = document.getElementById("c-sob").value.trim();
   if(!nome) return alert("Informe seu nome!");
-  // Abre Google Calendar em nova aba
-  window.open(GCAL_URL, "_blank");
-  // Mostra confirmação
+  
+  // Monta URL do Google Calendar com serviço e nome preenchidos
+  const servico = CLI_SERV?.nome || "";
+  const preco = CLI_SERV?.preco > 0 ? " — " + fmtR(CLI_SERV.preco) : "";
+  const titulo = encodeURIComponent(servico + preco);
+  const detalhes = encodeURIComponent("Cliente: " + nome + " " + sob + "\nServiço: " + servico + (CLI_SERV?.preco > 0 ? "\nValor: " + fmtR(CLI_SERV.preco) + " (5% desc. Pix/Dinheiro)" : ""));
+  
+  // Abre Google Calendar com informações preenchidas
+  window.open(GCAL_URL + "?title=" + titulo + "&details=" + detalhes, "_blank");
+  
+  // Mostra tela de confirmação
   irStep(4);
   document.getElementById("conf-det").innerHTML = `
     <div class="conf-det-row"><div class="conf-det-label">Cliente</div><div class="conf-det-val">${nome} ${sob}</div></div>
-    <div class="conf-det-row"><div class="conf-det-label">Serviço</div><div class="conf-det-val">${CLI_SERV?.nome||""}</div></div>
-    <div class="conf-det-row"><div class="conf-det-label">Próximo passo</div><div class="conf-det-val">Escolha a data e horário no Google Calendar que abriu! 📅</div></div>`;
-  document.getElementById("wpp-link").style.display="none";
+    <div class="conf-det-row"><div class="conf-det-label">Serviço</div><div class="conf-det-val">${servico}</div></div>
+    ${CLI_SERV?.preco > 0 ? `<div class="conf-det-row"><div class="conf-det-label">Valor</div><div class="conf-det-val">${fmtR(CLI_SERV.preco)} <span style="opacity:.6;font-size:11px">(5% desc. Pix/Dinheiro)</span></div></div>` : ""}
+    <div class="conf-det-row"><div class="conf-det-label">Próximo passo</div><div class="conf-det-val">📅 Escolha a data e horário no Google Calendar que abriu!</div></div>`;
+  document.getElementById("wpp-link").href = wLink(WPP_SALAO, "Olá, Evelyn! 😊\n\nAcabei de agendar pelo site:\n\n✂️ *" + servico + "*" + (CLI_SERV?.preco > 0 ? "\n💰 " + fmtR(CLI_SERV.preco) : "") + "\n\nNome: " + nome + " " + sob);
+  document.getElementById("wpp-link").style.display="block";
 }
 
 // ══════════════════════════════════════
