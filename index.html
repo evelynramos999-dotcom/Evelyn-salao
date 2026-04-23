@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name="theme-color" content="#111111">
-<title>Evelyn Ramos · Cabeleireira</title>
+<title>Evelyn Ramos · Estúdio Capilar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
   --pr:#111;--gold:#C9A84C;--goldC:#FBF5E6;
-  --bg:#F7F5F2;--border:#E8E4DF;
+  --bg:#FAF8F4;--border:#E8E2D8;
   --txt:#1a1a1a;--txt2:#666;--txt3:#aaa;
   --verde:#1B5E20;--verdeC:#E8F5E9;
   --roxo:#4A148C;--roxoC:#EDE7F6;
   --ambar:#E65100;--ambarC:#FFF3E0;
   --verm:#B71C1C;--vermC:#FFEBEE;
 }
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden}
-input,select,textarea,button{font-family:'Inter',sans-serif;font-size:15px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;overflow-x:hidden}
+input,select,textarea,button{font-family:'DM Sans',sans-serif;font-size:15px}
 input,select,textarea{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:12px;background:#fff;color:var(--txt);outline:none;transition:border .2s;-webkit-appearance:none}
 input:focus,select:focus,textarea:focus{border-color:var(--pr)}
 textarea{resize:vertical;min-height:80px;line-height:1.5}
@@ -36,7 +36,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.5}
 
 /* LOGO */
 .er-logo{display:inline-flex;flex-direction:column;align-items:center;gap:2px}
-.er-initials{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;letter-spacing:-3px;line-height:1}
+.er-initials{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:900;letter-spacing:-3px;line-height:1}
 .er-name{font-size:9px;letter-spacing:5px;text-transform:uppercase;opacity:.6}
 
 /* HERO */
@@ -52,16 +52,16 @@ textarea{resize:vertical;min-height:80px;line-height:1.5}
 
 /* CATÁLOGO */
 .cat-sec{padding:0 16px 80px}
-.cat-tit{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;margin:20px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.cat-tit{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;margin:20px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
 .cat-tit::before{content:'';width:3px;height:16px;background:var(--gold);border-radius:2px;display:block}
 .scard{background:#fff;border:1.5px solid var(--border);border-radius:16px;margin-bottom:12px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden}
 .scard:active{transform:scale(.98)}
 .scard.sel{border-color:var(--pr)}
 .scard-body{padding:14px 16px}
-.scard-nome{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;margin-bottom:5px;line-height:1.3}
+.scard-nome{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;margin-bottom:5px;line-height:1.3}
 .scard-desc{font-size:12px;color:var(--txt2);line-height:1.6;margin-bottom:10px}
 .scard-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
-.scard-preco{font-family:'Playfair Display',serif;font-size:19px;font-weight:700}
+.scard-preco{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:700}
 .scard-tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;background:#f0ece6;color:#555}
 .tag-gold{background:var(--goldC);color:#7a5c00}
@@ -81,14 +81,14 @@ textarea{resize:vertical;min-height:80px;line-height:1.5}
 .h-btn{padding:12px 4px;border:1.5px solid var(--border);border-radius:10px;background:#fff;font-size:13px;font-weight:500;cursor:pointer;text-align:center;color:var(--txt);transition:all .2s}
 .h-btn.sel{background:var(--pr);color:#fff;border-color:var(--pr)}
 .aviso-box{background:var(--goldC);border:1px solid #e8c96b;border-radius:14px;padding:16px;margin-bottom:16px}
-.aviso-tit{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;margin-bottom:10px}
+.aviso-tit{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;margin-bottom:10px}
 .aviso-item{font-size:12px;color:var(--txt2);line-height:1.7;padding-left:14px;position:relative;margin-bottom:4px}
 .aviso-item::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
 
 /* CONFIRMAÇÃO */
 .conf-hero{background:var(--pr);color:#fff;padding:28px 22px;text-align:center}
 .conf-icon{font-size:44px;margin-bottom:10px}
-.conf-tit{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:14px}
+.conf-tit{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;margin-bottom:14px}
 .conf-det{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 16px;font-size:13px;text-align:left}
 .conf-det-row{display:flex;flex-direction:column;margin-bottom:10px}
 .conf-det-row:last-child{margin-bottom:0}
@@ -99,7 +99,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.5}
 /* SOBRE */
 .sobre-card{background:#fff;margin:0 16px 16px;border-radius:16px;border:1px solid var(--border);overflow:hidden}
 .sobre-body{padding:18px}
-.sobre-tit{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:3px}
+.sobre-tit{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;margin-bottom:3px}
 .sobre-sub{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
 .sobre-txt{font-size:13px;color:var(--txt2);line-height:1.8}
 
@@ -107,7 +107,7 @@ textarea{resize:vertical;min-height:80px;line-height:1.5}
 .admin-wrap{display:flex;min-height:100vh}
 .sidebar{width:210px;background:var(--pr);display:flex;flex-direction:column;flex-shrink:0;position:fixed;top:0;left:0;height:100vh;z-index:100;overflow-y:auto}
 .sb-logo{padding:18px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
-.sb-er{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:#fff;letter-spacing:-1px}
+.sb-er{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:900;color:#fff;letter-spacing:-1px}
 .sb-sub{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:3px;margin-top:2px;text-transform:uppercase}
 .sb-gold{width:22px;height:2px;background:var(--gold);margin-top:8px;border-radius:1px}
 nav{padding:10px 8px;flex:1}
@@ -117,14 +117,14 @@ nav{padding:10px 8px;flex:1}
 .sb-foot{padding:12px 14px;border-top:1px solid rgba(255,255,255,.08)}
 .admin-main{margin-left:210px;padding:28px 30px;flex:1;min-width:0}
 .pg-hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:18px;gap:12px}
-.pg-tit{font-family:'Playfair Display',serif;font-size:21px;font-weight:700}
+.pg-tit{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700}
 .pg-sub{font-size:13px;color:var(--txt2);margin-top:3px}
 .acard{background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px 20px;margin-bottom:14px}
-.acard-tit{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;margin-bottom:12px}
+.acard-tit{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;margin-bottom:12px}
 .metrics{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 .metric{background:#f8f5f0;border-radius:12px;padding:12px 14px;flex:1;min-width:110px}
 .m-l{font-size:10px;color:var(--txt2);margin-bottom:3px;text-transform:uppercase;letter-spacing:.5px}
-.m-v{font-size:19px;font-weight:700;font-family:'Playfair Display',serif}
+.m-v{font-size:19px;font-weight:700;font-family:'Cormorant Garamond',serif}
 .badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px}
 .b-ag{background:var(--ambarC);color:var(--ambar)}
 .b-conc{background:var(--verdeC);color:var(--verde)}
@@ -137,7 +137,7 @@ nav{padding:10px 8px;flex:1}
 .b-al{background:var(--vermC);color:var(--verm)}
 .row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid #f5f2ee;flex-wrap:wrap}
 .row:last-child{border-bottom:none}
-.av{width:36px;height:36px;border-radius:50%;background:var(--pr);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;font-family:'Playfair Display',serif}
+.av{width:36px;height:36px;border-radius:50%;background:var(--pr);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;font-family:'Cormorant Garamond',serif}
 .r-main{flex:1;min-width:0}
 .r-nome{font-size:13px;font-weight:600}
 .r-sub{font-size:11px;color:var(--txt2);margin-top:2px}
@@ -165,7 +165,7 @@ nav{padding:10px 8px;flex:1}
 .modal-bg.aberto{display:flex}
 .mbox{background:#fff;border-radius:20px;padding:24px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto}
 .mhdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.mtit{font-family:'Playfair Display',serif;font-size:16px;font-weight:700}
+.mtit{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700}
 .bx{background:none;border:none;font-size:22px;cursor:pointer;color:#aaa;line-height:1}
 .hlinha{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f8f5f0;align-items:flex-start}
 .hl{font-size:12px;color:var(--txt3);min-width:48px;font-weight:600;padding-top:3px}
@@ -201,10 +201,7 @@ nav{padding:10px 8px;flex:1}
     </div>
     <div class="gold-line"></div>
     <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.5;margin-bottom:6px">Cabeleireira · São Carlos SP</div>
-    <div style="font-size:13px;opacity:.5;font-size:12px">6 anos de experiência · Especialista em fios</div>
-    <div style="margin-top:16px">
-      <a href="https://calendar.app.google/BpmoHKYTUiPFpdnTA" target="_blank" style="display:inline-block;background:var(--gold);color:#fff;padding:12px 28px;border-radius:12px;font-size:14px;font-weight:700;text-decoration:none">📅 Agendar horário</a>
-    </div>
+    <div style="font-size:13px;opacity:.5;font-size:12px">Especialista em Alisamentos &amp; Recuperação Capilar · São Carlos</div>
   </div>
 
   <!-- Steps -->
@@ -274,7 +271,7 @@ nav{padding:10px 8px;flex:1}
       <div class="campo"><label>Observações (opcional)</label><textarea id="c-obs" placeholder="Histórico químico, alergia a produto..."></textarea></div>
       <div style="display:flex;gap:10px">
         <button class="btn btn-sec" style="flex:1" onclick="irStep(2)">← Voltar</button>
-        <button class="btn btn-gold" style="flex:2" onclick="irGoogleCal()">Confirmar ✓</button>
+        <button class="btn btn-gold" style="flex:2" onclick="confirmarAg()">Confirmar ✓</button>
       </div>
     </div>
   </div>
@@ -615,18 +612,6 @@ function irStep(n){
   if(n>1) document.getElementById("sel-bar").style.display="none";
 }
 
-// URL do Google Apps Script — cole aqui após configurar
-const SHEETS_URL = "https://hook.us2.make.com/d4eietxxi64w7n5vikjcnjmczg2svjx4";
-
-function enviarParaSheets(dados){
-  if(!SHEETS_URL || SHEETS_URL === "COLE_AQUI_A_URL_DO_SEU_SCRIPT") return;
-  fetch(SHEETS_URL, {
-    method:"POST", mode:"no-cors",
-    headers:{"Content-Type":"application/json"},
-    body:JSON.stringify(dados)
-  }).catch(e=>console.log("Sheets:",e));
-}
-
 function confirmarAg(){
   const data = document.getElementById("c-data").value;
   if(!data) return alert("Selecione a data!");
@@ -639,11 +624,8 @@ function confirmarAg(){
   let cl = CLIENTES.find(c=>c.nome.toLowerCase()===nome.toLowerCase()&&c.sob.toLowerCase()===sob.toLowerCase());
   if(!cl){cl={id:gId(),nome,sob,tel:"",nasc,equipe:false};CLIENTES.push(cl);}
 
-  // Criar agendamento localmente
+  // Criar agendamento
   AGS.push({id:gId(),cliId:cl.id,serv:CLI_SERV.nome,preco:CLI_SERV.preco,data,hora:CLI_HORA,status:"agendado",pgto:null,troca:false,obs,inicio:null,fim:null,metodo:"",valorFinal:0});
-
-  // Enviar para Google Sheets
-  enviarParaSheets({acao:"novoAgendamento",nome,sobrenome:sob,nascimento:nasc,servico:CLI_SERV.nome,preco:CLI_SERV.preco,data,hora:CLI_HORA,obs,timestamp:new Date().toISOString()});
 
   // Montar confirmação
   document.getElementById("conf-det").innerHTML = `
@@ -864,9 +846,9 @@ function renderPgto(){
   document.getElementById("m-pgto-body").innerHTML=`
     <div style="background:#f8f5f0;border-radius:12px;padding:13px;margin-bottom:14px">
       <div style="font-size:12px;color:var(--txt2)">Cliente</div>
-      <div style="font-size:15px;font-weight:700;font-family:'Playfair Display',serif">${c.nome||""} ${c.sob||""}</div>
+      <div style="font-size:15px;font-weight:700;font-family:'Cormorant Garamond',serif">${c.nome||""} ${c.sob||""}</div>
       <div style="font-size:12px;color:var(--txt2);margin-top:2px">${_pgAg?.serv}</div>
-      <div style="font-size:21px;font-weight:700;margin-top:5px;font-family:'Playfair Display',serif">${fmtR(r.b)}</div>
+      <div style="font-size:21px;font-weight:700;margin-top:5px;font-family:'Cormorant Garamond',serif">${fmtR(r.b)}</div>
     </div>
     <div class="ca"><label>Forma de pagamento</label>
       <div class="pgrid">${[["pix","Pix (−5%)"],["dinheiro","Dinheiro (−5%)"],["debito","Débito (+"+TAXAS.deb+"%)"],["credito","Crédito (+"+TAXAS.cred+"%)"]]
@@ -926,6 +908,7 @@ function abrirModalCli(id){
       <div class="ca"><label>WhatsApp</label><input class="isml" id="mc-t" value="${c?.tel||""}" placeholder="16999999999"></div>
       <div class="ca"><label>Nascimento</label><input class="isml" id="mc-na" type="date" value="${c?.nasc||""}"></div>
     </div>
+    <div class="campo-adm"><label>Observações</label><textarea class="inp-sm" id="mc-ob" placeholder="Alergia, histórico químico, preferências...">${c?.obs||""}</textarea></div>
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin-bottom:14px;cursor:pointer"><input type="checkbox" id="mc-eq" ${c?.equipe?"checked":""}> Membro da equipe</label>
     <button class="btn btn-pr" onclick="salvarCli(${id||0})">${c?"Salvar":"Cadastrar"}</button>`;
   abrirModal("m-cli");
@@ -933,7 +916,7 @@ function abrirModalCli(id){
 function salvarCli(id){
   const nome=document.getElementById("mc-n").value.trim();
   if(!nome) return alert("Informe o nome!");
-  const d={nome,sob:document.getElementById("mc-s").value.trim(),tel:document.getElementById("mc-t").value.replace(/\D/g,""),nasc:document.getElementById("mc-na").value,equipe:document.getElementById("mc-eq").checked};
+  const d={nome,sob:document.getElementById("mc-s").value.trim(),tel:document.getElementById("mc-t").value.replace(/\D/g,""),nasc:document.getElementById("mc-na").value,obs:(document.getElementById("mc-ob")?document.getElementById("mc-ob").value.trim():""),equipe:document.getElementById("mc-eq").checked};
   if(id){const i=CLIENTES.findIndex(c=>c.id===id);if(i>=0)Object.assign(CLIENTES[i],d);}
   else CLIENTES.push({id:gId(),...d});
   fecharModal("m-cli"); renderAdmin("clientes");
@@ -972,7 +955,8 @@ function abrirModalServ(id){
 function salvarServ(id){
   const nome=document.getElementById("ms-n").value.trim();
   if(!nome) return alert("Informe o nome!");
-  const d={nome,dur:document.getElementById("ms-d").value,preco:Number(document.getElementById("ms-p").value),desc:document.getElementById("ms-desc").value,emoji:"✂️"};
+  const prod=(document.getElementById("ms-prod")?document.getElementById("ms-prod").value.split(",").map(p=>p.trim()).filter(Boolean):[]);
+  const d={nome,dur:document.getElementById("ms-d").value,preco:Number(document.getElementById("ms-p").value),desc:document.getElementById("ms-desc").value,produtos:prod,emoji:""};
   if(id){const s=SERVICOS.find(x=>x.id===id);if(s)Object.assign(s,d);}
   else SERVICOS.push({id:gId(),...d});
   fecharModal("m-serv"); renderAdmin("servicos"); renderCatalogo();
@@ -1088,7 +1072,7 @@ function pgMsg(){
   const novas=AGS.filter(a=>{const c=getCl(a.cliId);const ags=AGS.filter(x=>x.cliId===a.cliId);return ags.length===1&&c.tel;}).map(a=>{const c=getCl(a.cliId);return{...c,data:a.data};});
 
   const rowM=(c,msg,lbl,cor="#25D366")=>`<div class="row" style="padding:10px 16px"><div class="av">${ini(c.nome+" "+(c.sob||""))}</div><div class="r-main"><div class="r-nome">${c.nome} ${c.sob||""}</div><div class="r-sub">${c.tel}${c.data?" · "+fmtD(c.data):""}${c.g?" · "+fmtR(c.g):""}</div></div><button class="btn-sm" style="background:${cor};color:#fff" onclick="aWpp('${c.tel}',\`${msg.replace(/`/g,"'").replace(/\n/g,"\\n")}\`)">${lbl}</button></div>`;
-  const abas=[["sumidas",`Sumidas (${sum.length})`],["aniv",`Aniversário (${anv.length})`],["vip",`VIP (${vips.length})`],["posP","Pós-progressiva"],["posL","Pós-loiro"],["satisf",`Novas (${novas.length})`],["capt","Captação"]];
+  const abas=[["sumidas",`Sumidas (${sum.length})`],["aniv",`Aniversário (${anv.length})`],["vip",`VIP (${vips.length})`],["posP","Pós-progressiva"],["posL","Pós-loiro"],["satisf",`Novas (${novas.length})`],["editar","✏ Editar textos"],["capt","Captação"]];
   return`
 <div class="pg-hdr"><div class="pg-tit">Mensagens automáticas</div></div>
 <div class="filtros">${abas.map(([v,l])=>`<button class="fbtn${msgA===v?" on":""}" onclick="msgA='${v}';renderAdmin('mensagens')">${l}</button>`).join("")}</div>
@@ -1099,6 +1083,16 @@ ${msgA==="vip"?(vips.length?vips.map(c=>rowM(c,msgVip(c),"👑 Presentear","#E65
 ${msgA==="posP"?(progs.length?progs.map(c=>rowM(c,msgPosP(c),"Enviar cuidados","#7B1FA2")).join(""):`<div style="padding:18px;text-align:center;color:var(--txt3)">Nenhuma.</div>`):""}
 ${msgA==="posL"?(loiros.length?loiros.map(c=>rowM(c,msgPosL(c),"Enviar cuidados","#E65100")).join(""):`<div style="padding:18px;text-align:center;color:var(--txt3)">Nenhuma.</div>`):""}
 ${msgA==="satisf"?(novas.length?novas.map(c=>rowM(c,msgSatisf(c),"Pesquisa","#1565C0")).join(""):`<div style="padding:18px;text-align:center;color:var(--txt3)">Nenhuma cliente nova.</div>`):""}
+${msgA==="editar"?`<div style="padding:20px">
+  <div style="font-size:12px;color:var(--txt2);margin-bottom:16px;line-height:1.7">Edite os textos das mensagens automáticas. Use <strong>{nome}</strong> onde quiser inserir o nome da cliente automaticamente.</div>
+  ${[["posP","Pós-progressiva"],["posL","Pós-loiro"],["sumida","Clientes sumidas"],["aniv","Aniversário"],["vip","Cliente VIP"],["satisf","Pesquisa de satisfação"]].map(([k,l])=>
+    `<div style="margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)">
+      <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;font-weight:600">${l}</div>
+      <textarea style="width:100%;min-height:90px;background:#fff;border:1px solid var(--border);padding:12px;font-size:12px;color:var(--txt);line-height:1.7;resize:vertical;outline:none;font-family:'DM Sans',sans-serif" id="med-${k}">${MSGS[k]||""}</textarea>
+      <button class="btn-sm" style="background:var(--verdeC);color:var(--verde);margin-top:8px" onclick="salvarMsg('${k}')">✓ Salvar alteração</button>
+    </div>`
+  ).join("")}
+</div>`:""}
 ${msgA==="capt"?`<div style="padding:16px"><div style="background:#f8f5f0;border-radius:12px;padding:14px;font-size:13px;line-height:1.8;white-space:pre-wrap;margin-bottom:12px">✨ *Evelyn Ramos* — Cabeleireira
 São Carlos/SP
 
@@ -1145,10 +1139,10 @@ function pgMetas(){
 </div>
 <div class="g2">
   <div class="acard"><div class="acard-tit">Quantas clientes atender</div>
-    <div style="background:#f8f5f0;border-radius:10px;padding:12px;margin-bottom:10px"><div style="font-size:10px;color:var(--txt2);margin-bottom:3px;text-transform:uppercase">Ticket médio</div><div style="font-size:22px;font-weight:700;font-family:'Playfair Display',serif">${fmtR(ticket)}</div></div>
+    <div style="background:#f8f5f0;border-radius:10px;padding:12px;margin-bottom:10px"><div style="font-size:10px;color:var(--txt2);margin-bottom:3px;text-transform:uppercase">Ticket médio</div><div style="font-size:22px;font-weight:700;font-family:'Cormorant Garamond',serif">${fmtR(ticket)}</div></div>
     <div style="background:${falta>0?"var(--vermC)":"var(--verdeC)"};border-radius:10px;padding:12px">
       <div style="font-size:10px;color:${falta>0?"var(--verm)":"var(--verde)"};margin-bottom:3px;text-transform:uppercase">Clientes necessárias</div>
-      <div style="font-size:26px;font-weight:700;color:${falta>0?"var(--verm)":"var(--verde)"};font-family:'Playfair Display',serif">${falta>0?Math.ceil(falta/ticket):"Meta atingida! 🎉"}</div>
+      <div style="font-size:26px;font-weight:700;color:${falta>0?"var(--verm)":"var(--verde)"};font-family:'Cormorant Garamond',serif">${falta>0?Math.ceil(falta/ticket):"Meta atingida! 🎉"}</div>
       ${falta>0&&diasR>0?`<div style="font-size:11px;color:var(--verm);margin-top:3px">${fmtR(falta/diasR)}/dia · ${diasR} dias restantes</div>`:""}
     </div>
   </div>
@@ -1228,33 +1222,24 @@ function pgConfig(){return`
 </div>`;}
 
 // ══════════════════════════════════════
-// GOOGLE CALENDAR
+// MENSAGENS EDITÁVEIS
 // ══════════════════════════════════════
-const GCAL_URL = "https://calendar.app.google/BpmoHKYTUiPFpdnTA";
+let MSGS = {
+  posP: `Olá, {nome}! 💆‍♀️\n\nFoi um prazer te atender!\n\n🌟 *Cuidados pós-progressiva:*\n• Não lave o cabelo por 72h\n• Não prenda nem use grampo por 3 dias\n• Evite umidade, suor e chuva\n• Use shampoo sem sal e sem sulfato\n• Não entre em piscina ou mar por 15 dias\n• Use protetor térmico sempre\n\nQualquer dúvida me chame! 💕`,
+  posL: `Olá, {nome}! ✨\n\nQue prazer te atender!\n\n💛 *Cuidados pós-loiro:*\n• Shampoo desamarelador 1×/semana\n• Hidratação semanal\n• Protetor térmico SEMPRE\n• Não lave nas primeiras 48h\n• Retoque a cada 30-45 dias\n\nFique linda! 💕`,
+  sumida: `Oi, {nome}! 💕\n\nSentimos sua falta!\n\nFaz um tempinho que não te vejo e fiquei pensando em você 🥰\n\nTenho horários disponíveis essa semana! Manda mensagem! 🗓️`,
+  aniv: `🎂 *Feliz aniversário, {nome}!* 🎉\n\nUm dia incrível para você! 💕\n\n🎁 Você ganhou uma *ESCOVA GRÁTIS* no seu mês de aniversário!\n\nManda mensagem para agendar!`,
+  vip: `🌟 Parabéns, {nome}! 👑\n\nVocê é minha cliente VIP!\n\n💆‍♀️ Você ganhou uma *HIDRATAÇÃO GRÁTIS* pela sua fidelidade!\n\nManda mensagem para agendar! 💕`,
+  satisf: `Oi, {nome}! 😊\n\nFoi um prazer te atender!\n\nComo foi sua experiência hoje? Sua opinião é muito importante para mim! 💕`,
+};
+function msgTpl(key, nome){return (MSGS[key]||"").replace(/\{nome\}/g, nome);}
 
-function irGoogleCal(){
-  const nome = document.getElementById("c-nome").value.trim();
-  const sob = document.getElementById("c-sob").value.trim();
-  if(!nome) return alert("Informe seu nome!");
-  
-  // Monta URL do Google Calendar com serviço e nome preenchidos
-  const servico = CLI_SERV?.nome || "";
-  const preco = CLI_SERV?.preco > 0 ? " — " + fmtR(CLI_SERV.preco) : "";
-  const titulo = encodeURIComponent(servico + preco);
-  const detalhes = encodeURIComponent("Cliente: " + nome + " " + sob + "\nServiço: " + servico + (CLI_SERV?.preco > 0 ? "\nValor: " + fmtR(CLI_SERV.preco) + " (5% desc. Pix/Dinheiro)" : ""));
-  
-  // Abre Google Calendar com informações preenchidas
-  window.open(GCAL_URL + "?title=" + titulo + "&details=" + detalhes, "_blank");
-  
-  // Mostra tela de confirmação
-  irStep(4);
-  document.getElementById("conf-det").innerHTML = `
-    <div class="conf-det-row"><div class="conf-det-label">Cliente</div><div class="conf-det-val">${nome} ${sob}</div></div>
-    <div class="conf-det-row"><div class="conf-det-label">Serviço</div><div class="conf-det-val">${servico}</div></div>
-    ${CLI_SERV?.preco > 0 ? `<div class="conf-det-row"><div class="conf-det-label">Valor</div><div class="conf-det-val">${fmtR(CLI_SERV.preco)} <span style="opacity:.6;font-size:11px">(5% desc. Pix/Dinheiro)</span></div></div>` : ""}
-    <div class="conf-det-row"><div class="conf-det-label">Próximo passo</div><div class="conf-det-val">📅 Escolha a data e horário no Google Calendar que abriu!</div></div>`;
-  document.getElementById("wpp-link").href = wLink(WPP_SALAO, "Olá, Evelyn! 😊\n\nAcabei de agendar pelo site:\n\n✂️ *" + servico + "*" + (CLI_SERV?.preco > 0 ? "\n💰 " + fmtR(CLI_SERV.preco) : "") + "\n\nNome: " + nome + " " + sob);
-  document.getElementById("wpp-link").style.display="block";
+// ══════════════════════════════════════
+// SALVAR MENSAGEM EDITADA
+// ══════════════════════════════════════
+function salvarMsg(key){
+  const el=document.getElementById("med-"+key);
+  if(el){MSGS[key]=el.value;alert("Mensagem salva!");}
 }
 
 // ══════════════════════════════════════
